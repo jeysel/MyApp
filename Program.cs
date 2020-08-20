@@ -132,7 +132,8 @@ namespace MyApp
             Console.Clear();
 
             decimal valor = 10536.25m;
-            Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"))); // string "C" exibe moeda local
+            // string "C" exibe moeda local
+            Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR")));
 
             // Metodo de arredondamento de valor
             Console.WriteLine(Math.Round(valor)); // arredonda na média
