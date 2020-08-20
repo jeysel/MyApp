@@ -109,7 +109,7 @@ namespace MyApp
             /*
 
               | Metodos C# para Data  |
-            */
+           
 
             Console.Clear();
 
@@ -122,8 +122,22 @@ namespace MyApp
                 return today == DayOfWeek.Saturday || today == DayOfWeek.Sunday;
             }
 
+             */
 
 
+            /* 
+                | Formatação de Moeda |
+            
+            */
+            Console.Clear();
+
+            decimal valor = 10536.25m;
+            Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"))); // string "C" exibe moeda local
+
+            // Metodo de arredondamento de valor
+            Console.WriteLine(Math.Round(valor)); // arredonda na média
+            Console.WriteLine(Math.Ceiling(valor)); // arredonda pra cima
+            Console.WriteLine(Math.Floor(valor)); // arredonda pra baixo
 
 
         }
